@@ -23,7 +23,7 @@ class LinkedList {
         Node* newNode = new Node(value);
 
         if (head == nullptr)        
-            head = nullptr;
+            head = newNode;
         else 
         {
             Node* temp = head;
