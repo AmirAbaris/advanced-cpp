@@ -1,0 +1,1 @@
+ PersonStruct person2;
