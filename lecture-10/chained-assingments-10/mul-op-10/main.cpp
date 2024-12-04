@@ -4,6 +4,7 @@ using namespace std;
 
 // TODO: fix bugs
 // TODO: add other operations
+// TODO: adade mokhtalet - matris
 
 struct Ratio
 {
