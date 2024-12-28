@@ -43,7 +43,7 @@ int main() {
         cout << "Inverted ratio: ";
         r.display();
     } catch (const exception& e) {
-        cerr << "Error: " << e.what() << endl;
+        cout << "Error: " << e.what() << endl;
     }
     return 0;
 }
