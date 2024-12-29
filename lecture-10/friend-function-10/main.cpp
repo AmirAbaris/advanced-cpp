@@ -9,18 +9,18 @@ class Multiply
 private:
     int a, b;
 public:
+    Multiply(int x, int y) : a(x), b(y) {}
     // friend function
-    friend int mulNumbers(int a, int b);
+    friend int mulNumbers(Multiply &m);
 };
 
-int mulNumbers(int a, int b) {
-    return a * b;
+int mulNumbers(Multiply &m) {
+    return m.a * m.b;
 };
 
 int main()
 {
-    int a = 2;
-    int b = 3;
-    cout << mulNumbers(a, b) << endl;
+    Multiply m(2, 3);
+    cout << mulNumbers(m) << endl;
     return 0;
 }
